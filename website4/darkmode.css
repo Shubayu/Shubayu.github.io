@@ -1,0 +1,42 @@
+#brightnessControls 
+{
+    position: absolute;
+    top: 150px;
+    left: 1600px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(254, 204, 239, 0.5);
+    padding: 7px;
+    border: 0.5px solid #d16868;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(253, 41, 41, 0.5);
+    z-index: 999;
+}
+
+#brightnessSlider 
+{
+    appearance: none;
+    width: 100%; 
+    height: 4px; 
+    background: linear-gradient(to right, #c1f3ff 0%, hsl(219, 100%, 76%) 100%);
+    opacity: 0.7;
+}
+#brightnessText 
+{
+    cursor: move; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 1.8em;
+}
+
+
+#brightnessSlider::-webkit-slider-thumb 
+{
+    appearance: none;
+    width: 16px; 
+    height: 16px;
+    background-color: #d0b2ff;
+    border-radius: 50%;
+    cursor: pointer;
+}
