@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+a
+{
+    text-decoration: none;
+}
+
+@keyframes wave {
+    0% {
+        color: rgb(194, 103, 255); 
+    }
+    25% {
+        color: rgb(210, 143, 255); 
+    }
+    50% {
+        color: rgb(133, 50, 201) 
+    }
+    75% {
+        color: rgb(148, 30, 231); 
+    }
+    100% {
+        color: rgb(207, 87, 255); 
+    }
+}
+
+@keyframes wave2 {
+    0% {
+        color: rgb(158, 112, 158);
+    }
+    25% {
+        color: rgb(150, 104, 150);
+    }
+    50% {
+        color: rgb(100, 130, 145);
+    }
+    75% {
+        color: rgb(110, 140, 150);
+    }
+    100% {
+        color: rgb(150, 115, 150);
+    }
+}
+
+@keyframes scrollStars {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+:root 
+{
+    --background-gradient-light: radial-gradient(ellipse at center, #ffffff, #a9d5ff, #ffb1f5); 
+    --top-bar-light: white;
+    --welcome-text-light: #ffffff;
+    --top-items-light: rgba(177, 236, 254, 1.0);
+    --juwa-text-light: rgb(254, 204, 219);
+    --shu-text-light: rgb(177, 236, 254);
+    --und-text-light: rgb(241, 241, 163);
+    --stars-light: url("./img/stars.png");
+    --blur-color-light: rgba(255, 255, 255, 0.5); 
+    --box1-background-light: hsla(286, 96%, 82%, 0.5);
+    --box2-background-light: hsla(214, 100%, 77%, 0.5);
+    --box3-background-light: hsla(286, 96%, 82%, 0.5);
+    --box4-background-light: hsla(197, 100%, 77%, 0.5);
+    --box5-background-light: hsla(286, 96%, 82%, 0.5);
+    --box1-img-light: url("./img/img2.jpg");
+    --box1-img-dark: url("./img/img2dark.jpg");
+    --box2-img-light: url("./img/osu.png");
+    --box2-img-dark: url("./img/osudark.png");
+    --box3-img-light: url("./img/img3.jpg");
+    --box3-img-dark: url("./img/img3dark.jpg");
+    --box4-img-light: url("./img/img4.jpg");
+    --box4-img-dark: url("./img/img4dark.jpg");
+    --box5-img-light: url("./img/img5.jpg");
+    --box5-img-dark: url("./img/img5dark.jpg");
+}
+.dark_mode
+{
+    --background-gradient-light: radial-gradient(ellipse at center, #444444, #384553, #69465c);
+    --top-bar-light: rgb(138, 138, 138);
+    --welcome-text-light: #000000;
+    --top-items-light: rgb(49, 65, 70);
+    --juwa-text-light: rgb(182, 145, 156);
+    --shu-text-light: rgb(117, 155, 167);
+    --und-text-light: rgb(153, 153, 105);
+    --stars-light: url("./img/starsdark.png");
+    --blur-color-light: #b6b6b638;
+    --box1-background-light: hsla(280, 27%, 49%, 0.507);
+    --box2-background-light: hsla(214, 21%, 43%, 0.808);
+    --box3-background-light: hsla(280, 27%, 49%, 0.507);
+    --box4-background-light: hsla(214, 21%, 43%, 0.808);
+    --box5-background-light: hsla(280, 27%, 49%, 0.507);
+    
+
+}
+
+.dark_mode .box h2 {
+    animation: wave2 2s linear infinite; /* Change animation for dark mode */
+}
+
+
+body
+{
+    background: var(--background-gradient-light);
+    padding-bottom: 100px;
+    overflow-x: hidden;
+}
+body::before
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16em;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px #555;
+}
+::selection 
+{
+    background-color: #3e3053; 
+    color: #000000; 
+}
+section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+section h2
+{
+    user-select: none;
+    margin-left: 150px;
+    font-size: 4em;
+    color: #fff;
+    margin-bottom: 20px;
+    animation: wave 10s infinite;
+}
+section .container
+{
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section:nth-child(even) .container
+{
+    flex-direction: row-reverse;
+}
+section .container .imgBx
+{
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 70px;
+    box-shadow: 0 25px 35px rgba(0,0,0,0.1);
+}
+section .container .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section .container .content
+{
+    position: absolute;
+    right: 0;
+    margin-top: 300px;
+    margin-bottom: 40px;
+    padding: 40px;
+    z-index: 1;
+    max-width: 400px;
+    color: #000000;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.473);
+    border-bottom: 6px solid rgba(74, 198, 255, 0.6);
+    border-radius: 20px;
+}
+section:nth-child(even) .container .content
+{
+    left: 0;
+}
+#box1 .container .content
+{
+    left: -290px;
+    background: var(--box1-background-light);
+}
+#box2 .container .content
+{
+    right: -290px;
+    background: var(--box2-background-light);
+}
+#box3 .container .content
+{
+    left: -290px;
+    background: var(--box3-background-light);
+}
+#box4 .container .content
+{
+    right: -290px;
+    background: var(--box4-background-light);
+}
+#box5 .container .content
+{
+    left: -290px;
+    background: var(--box5-background-light);
+}
+
+
+header
+{
+    position: absolute;
+    background-color: var(--top-bar-light);
+    left: 0;
+    width: 100%;
+    padding: 23px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+header .logo
+{
+    position: relative;
+    left: -90px;
+}
+header .logo-text
+{
+    user-select: none;
+    font-size: 2.2em;
+}
+header ul
+{
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover
+{
+    background: rgba(177, 236, 254, 0.4);
+    color: #2b1055;
+}
+
+.list
+{
+    display: flex;
+    justify-content: space-between;   
+}
+.list-items a
+{
+    color: var(--top-items-light);
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 1.2em;
+    transition: 0.4s;
+}
+.list-items a:hover
+{
+    color: rgba(177, 236, 254, 1.0);
+    animation: wave 2s linear infinite; 
+}
+.scrolling-stars
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: var(--stars-light);
+    animation: scrollStars 20s linear infinite; 
+    opacity: 0.4;
+}
+#stars1 
+{
+   /* position: absolute;*/
+    left: 0; 
+}
+
+#stars2 
+{
+   /* position: absolute;*/
+    left: -100%; 
+}
