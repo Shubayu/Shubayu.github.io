@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery scroll</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jarallax.css">
+    <link rel="stylesheet" href="audio.css">
+    <link rel="stylesheet" href="blur.css">
+    <link rel="stylesheet" href="darkmode.css">
+    
+</head>
+<body>
+
+
+    <header>  
+    </div>
+    <div class="logo">
+      <span class="logo-text"><i style="margin-right: 0.1em"></i> 
+      <span style="color: var(--juwa-text-light); font-size: 1em; font-family: s, sans-serif; font-weight: 900; -webkit-text-stroke: 0.5px black; ">Special</span>
+      <span style="color: var(--und-text-light); font-size: 1em; font-family: s, sans-serif; font-weight: 900; -webkit-text-stroke: 0.5px black;">⭐</span>
+      <span style="color: var(--shu-text-light); font-size: 1em; font-family: s, sans-serif; font-weight: 900; -webkit-text-stroke: 0.5px black;">Memories</span>
+  </div>
+
+  <div class="menubar">
+      <ul class="list">
+          <li class="list-items"><a href="../website/index.html">Home Page</a></li>
+          <li class="list-items"><a href="../website2/index.html">eepy time</a></li>
+          <li class="list-items"><a href="../website4/index.html">Games</a></li>
+      </ul>
+  </div>
+</header>
+
+    <section>
+        <div class="circle"></div>
+
+        <audio id="audioPlayer" src="audio/bgm1.ogg" loop></audio>
+        <div id="audioControls">
+        <button id="toggleButton" class="play">
+            <span id="toggleText">♫</span>
+        </button>
+        <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.05">
+      </div>
+
+      <div id="brightnessControls">
+        <span id="brightnessText">☀</span>
+        <input type="range" id="brightnessSlider" min="20" max="100" value="100">
+        <button id="dark_mode_button">☀</button>
+    </div>
+
+        <img src="./img/balnk.png" id="stars1" class="scrolling-stars">
+        <img src="./img/balnk.png" id="stars2" class="scrolling-stars">
+
+        <div class="box"
+            id="box1">
+             <h2 data-jarallax-element="0 200">Example 1</h2>
+              <div class="container">
+                <div class="imgBx jarallax">
+                    <img src="img/img2.jpg" class="jarallax-img" id="box1-img">
+                </div>
+                <div class="content" data-jarallax-element="-200 0">
+                    <p>basically eine "Hall of Fame" oder "Achievements", "Special Moments", "Memories" kind of Seite.
+                        Momente die zu besonders für die normale Galerie sind, werden hier eingefügt mit Bild und Beschreibung. 
+                        Beispiele dafür wären unter anderem das Ergebnis von r/place mit einer Beschreibung, welche den Erfolg erläutert o.ä.
+                        Momente, Erlebnisse, Erfolge von ähnlich großem Wert, landen dann auf dieser Seite. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+     <div class="box"
+        id="box2">
+         <h2 data-jarallax-element="0 -200">pixture haha</h2>
+          <div class="container">
+            <div class="imgBx jarallax">
+                <img src="img/osu.png" class="jarallax-img" id="box2-img">
+            </div>
+                <div class="content" data-jarallax-element="-200 0">
+                  <p>Hello Lello Hello Lello Hello LelloHello Lello Hello Lello Hello Lello Hello Lello Hello Lello 
+                        Hello Lello Hello LelloHello Lello Hello LelloHello LelloHello LelloHello LelloHello Lello 
+                        Hello LelloHello LelloHello LelloHello LelloHello LelloHello LelloHello LelloHello Lello
+                        Hello LelloHello LelloHello LelloHello LelloHello LelloHello LelloHello LelloHello Lello
+                        Hello LelloHello LelloHello LelloHello LelloHello LelloHello LelloHello LelloHello Lello</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+     <div class="box"
+        id="box3">
+        <h2 data-jarallax-element="0 200">pixture haha</h2>
+         <div class="container">
+            <div class="imgBx jarallax">
+                <img src="img/img1.jpg" class="jarallax-img" id="box3-img">
+            </div>
+             <div class="content" data-jarallax-element="-200 0">
+              <p>Hello Lello Hello Lello Hello LelloHello Lello Hello Lello Hello Lello Hello Lello Hello Lello 
+                        Hello Lello Hello LelloHello Lello Hello LelloHello LelloHello LelloHello LelloHello Lello 
+                        Hello LelloHello LelloHello LelloHello LelloHello LelloHello LelloHello LelloHello Lello
+                        Hello LelloHello LelloHello LelloHello LelloHello LelloHello LelloHello LelloHello Lello
+                        Hello LelloHello LelloHello LelloHello LelloHello LelloHello LelloHello LelloHello Lello</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="box"
+         id="box4">
+          <h2 data-jarallax-element="0 -200">pixture haha</h2>
+           <div class="container">
+            <div class="imgBx jarallax">
+                <img src="img/img4.jpg" class="jarallax-img" id="box4-img">
+            </div>
+                <div class="content" data-jarallax-element="-200 0">
+                 <p>Hello Lello Hello Lello Hello LelloHello Lello Hello Lello Hello Lello Hello Lello Hello Lello 
+                        Hello Lello Hello LelloHello Lello Hello LelloHello LelloHello LelloHello LelloHello Lello 
+                        Hello LelloHello LelloHello LelloHello LelloHello LelloHello LelloHello LelloHello Lello
+                        Hello LelloHello LelloHello LelloHello LelloHello LelloHello LelloHello LelloHello Lello
+                        Hello LelloHello LelloHello LelloHello LelloHello LelloHello LelloHello LelloHello Lello</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="box"
+         id="box5">
+          <h2 data-jarallax-element="0 200">pixture haha</h2>
+           <div class="container">
+            <div class="imgBx jarallax">
+                <img src="img/img5.jpg" class="jarallax-img" id="box5-img">
+            </div>
+                <div class="content" data-jarallax-element="-200 0">
+                    <p>Hello Lello Hello Lello Hello LelloHello Lello Hello Lello Hello Lello Hello Lello Hello Lello 
+                        Hello Lello Hello LelloHello Lello Hello LelloHello LelloHello LelloHello LelloHello Lello 
+                        Hello LelloHello LelloHello LelloHello LelloHello LelloHello LelloHello LelloHello Lello
+                        Hello LelloHello LelloHello LelloHello LelloHello LelloHello LelloHello LelloHello Lello
+                        Hello LelloHello LelloHello LelloHello LelloHello LelloHello LelloHello LelloHello Lello</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+ <script src="blur.js"></script>
+ <script src="jarallax.js"></script>
+ <script src="jarallax-element.js"></script>
+ <script src="audio.js"></script>
+ <script src="brightnessdrag.js"></script>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const darkModeButton = document.getElementById("dark_mode_button");
+        
+            darkModeButton.addEventListener("click", function () {
+                document.body.classList.toggle("dark_mode");
+                updateImageSources();
+            });
+        
+            function updateImageSources() {
+                const images = document.querySelectorAll("img.jarallax-img");
+                images.forEach(img => {
+                    const imgId = img.id;
+                    const newSrc = getComputedStyle(document.documentElement).getPropertyValue(`--${imgId}-light`).trim();
+                    img.src = newSrc.replace(/^url\(["']?/, '').replace(/["']?\)$/, '');
+                });
+            }
+        
+            // Initial call to set the correct image sources based on the initial mode
+            updateImageSources();
+        });
+    </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const darkModeButton = document.getElementById("dark_mode_button");
+
+    darkModeButton.addEventListener("click", function () {
+        document.body.classList.toggle("dark_mode");
+        updateImageSources();
+    });
+
+    function updateImageSources() {
+        const images = document.querySelectorAll("img.jarallax-img");
+        images.forEach(img => {
+            const imgId = img.id;
+            const lightSrc = getComputedStyle(document.documentElement).getPropertyValue(`--${imgId}-light`).trim();
+            const darkSrc = getComputedStyle(document.documentElement).getPropertyValue(`--${imgId}-dark`).trim();
+            img.src = document.body.classList.contains("dark_mode") ? darkSrc.replace(/^url\(["']?/, '').replace(/["']?\)$/, '') : lightSrc.replace(/^url\(["']?/, '').replace(/["']?\)$/, '');
+        });
+    }
+
+    // Initial call to set the correct image sources based on the initial mode
+    updateImageSources();
+});
+    </script>
+
+
+
+<script type="text/javascript">
+    jarallax(document.querySelectorAll('.jarallax'), {
+        speed: 0.5,
+    });
+    </script>
+
+<div class="cursor-blur"></div>
+
+
+
+</body>
+</html>
